@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mine_moodel_Prosjekter;
+using System;
 using System.Security.Cryptography.X509Certificates;
 
 namespace FirstTry
@@ -17,13 +18,15 @@ namespace FirstTry
             Console.WriteLine("1. Stein saks papir, kan du slå meg?");
             Console.WriteLine("2. Kalkulator");
             Console.WriteLine("3. Tilfeldig tall med if/else");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
+            Console.WriteLine("4. variabler og bruk");
+            Console.WriteLine("5. Grunnleggende C#");
+            Console.WriteLine("6. Random Hobby");
+            Console.WriteLine("7. For løkker");
+            Console.WriteLine("8. Krokodillespillet");
             
 
-            int MenuChoise = int.Parse(Console.ReadLine());
-            CheckInput(MenuChoise);
+            int userChoice = int.Parse(Console.ReadLine());
+            CheckInput(userChoice);
 
         }
 
@@ -41,7 +44,31 @@ namespace FirstTry
                 case 3:
                     Prog3.RandomNumber();
                     break;
+                case 4:
+
+                    Prog4.Variabeltyper();
+                    break;
+                case 5:
+                    var prog5 = new Prog5();
+                    prog5.grunnleggendeCsharp();
+                    break;
+                case 6:
+                    var prog6 = new prog6();
+                    prog6.hobbyAsigner();
+                    break;
+                case 7:
+                    var prog7 = new prog7();
+                    prog7.ForeLoops();
+                    break;
+                case 8:
+                    var prog8 = new prog8();
+                    prog8.Krokodillespillet();
+                    break;
+
+                
+
             }
+
         }
     }
 }

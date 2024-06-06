@@ -16,15 +16,13 @@ namespace FirstTry
             Console.WriteLine("Takk for at du tester min kalkulator");
 
             Console.WriteLine("Skriv inn første NR:");
-            Console.ReadLine();
-            firstNumber = Convert.ToInt32(Console.ReadLine());
+              firstNumber = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("skriv inn andre NR:");
-            Console.ReadLine();
-            secondNumber = Convert.ToInt32(Console.ReadLine());
+              secondNumber = Convert.ToInt32(Console.ReadLine());
             
             Console.WriteLine("hva ønsker du å gjøre? *,/,+,-,?");
-            operations = Console.ReadLine();
+              operations = Console.ReadLine();
 
             
             if (operations == "*") 
@@ -52,7 +50,18 @@ namespace FirstTry
 
             else { Console.WriteLine("Beklager ikke korrekt format på regnestykket, prøv igjen"); }
 
+            Console.Write("nytt regnestykke? (J/N): ");
+            var answer1 = Console.ReadLine();
+            answer1 = answer1.ToUpper();
 
+            if (answer1 == "J")
+            {
+                BasicCalculator();
+            }
+            else
+            {
+                Program.Main();
+            }
         }
     }
 }

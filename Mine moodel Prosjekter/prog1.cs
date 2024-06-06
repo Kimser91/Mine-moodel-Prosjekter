@@ -12,7 +12,7 @@ namespace FirstTry
                 String player;
                 String computer;
                 String answer;
-
+            Console.Clear();
             while (playAgain)
             {
                 player = "";
