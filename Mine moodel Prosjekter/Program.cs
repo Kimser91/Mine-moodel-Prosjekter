@@ -23,7 +23,9 @@ namespace FirstTry
             Console.WriteLine("6. Random Hobby");
             Console.WriteLine("7. For løkker");
             Console.WriteLine("8. Krokodillespillet");
-            
+            Console.WriteLine("9. Gjett tallet");
+            Console.WriteLine("10. Tekst tukling");
+
 
             int userChoice = int.Parse(Console.ReadLine());
             CheckInput(userChoice);
@@ -63,6 +65,14 @@ namespace FirstTry
                 case 8:
                     var prog8 = new prog8();
                     prog8.Krokodillespillet();
+                    break;
+                case 9:
+                    var prog9 = new prog9();
+                    prog9.GjettTallet();
+                    break;
+                case 10:
+                    var prog10 = new prog10();
+                    prog10.TekstTukling();
                     break;
 
                 
