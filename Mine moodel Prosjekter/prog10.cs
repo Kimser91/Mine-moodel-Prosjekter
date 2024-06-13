@@ -9,10 +9,13 @@ namespace Mine_moodel_Prosjekter
 {
     internal class prog10
     {
+        public string userInput;
         public void TekstTukling() 
         {
             Console.WriteLine("Hmmm...");
+            userInput = Console.ReadLine();
 
+            if (userInput == "a") { }
             
             
             Console.Write("Prøve en gang til? (J/N): ");
